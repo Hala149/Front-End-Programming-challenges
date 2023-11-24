@@ -1,0 +1,137 @@
+
+/* Start Variables */
+:root{
+    --main-color:#20BFA9;
+    --bt-color: #f73859;
+    --span-color:#4caf50;
+    --section-color:#282828;
+    --main-raduis : 10px;
+    --m : linear-gradient(to bottom, #282828 30%, white 30%,  white 100%);
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+   font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans Condensed', sans-serif;    */
+   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* End Globsl Ruls */
+.perant {
+  width: 982px;
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+.container {
+    width: 962px;
+    height: 434px;
+    padding: 50px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-color);
+    position: relative;
+}
+.container::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 1px;
+  height: calc(100% - 100px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+.container::after{
+  content: "OR";
+  position: absolute;
+  background-color: white;
+  color: var(--main-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+.perant .container .box{
+  width: 351px;
+  height: 334px;
+   background-image: var(--m);
+   border-radius: var(--main-raduis);
+   flex-direction: column;
+   position: relative;
+}
+
+.perant .container .box div h2{
+  color: white;
+   text-align: center;
+}
+.perant .container .box  div h2 span{
+    color: var(--span-color);
+}
+.perant .container .box .insid-box {
+  width: 280px;
+  /* height: 234px; */
+  background-color: white;
+  border-radius: var(--main-raduis);
+  box-shadow: 2px 0px #eee ,0 2px #eee , -2px 0 #eee;
+  position: absolute;
+  top: calc(50% + 20px);
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding: 5px 30px;
+  font-size: 15px;
+
+}
+.perant .container .box .insid-box h3{
+  margin-bottom:25px;
+}
+.perant .container .box .insid-box p {
+  margin-left: 20px;
+  position: relative;
+}
+.perant .container .box .insid-box p::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bt-color);
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.perant .container .box .insid-box div{
+  text-align:center;
+}
+.perant .container .box .insid-box  button{
+  width: 180px;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: var(--bt-color);
+  color: white;
+  border-radius: var(--main-raduis);
+  border: none;
+}
+
+/* MY FRAMEWORK  */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

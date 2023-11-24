@@ -1,0 +1,126 @@
+/* Start Variables */
+:root{
+    --main-color:#009688;
+    --second-color:rgb(97, 96, 96);
+}
+/* END Variables */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* END Global Rules */
+.parent{
+    width: 400px;
+    margin: 25px auto;
+    background-color:#eee ;
+    border: 1px solid #aaa;
+}
+.parent .box{
+    width: 350px;
+    background-color:#fff ;
+    margin: 25px auto;
+    border-radius: 5px;
+}
+.parent .box .images{
+    width: 100%;
+      /* background-color: white; */
+      position: relative;
+     
+
+}
+.parent .box .images img{
+    width: 100%;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.parent .box .images::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    border: 1px solid #fff;
+    background-image: url(../img/4de2335223bd42003f05e23bc51a4148.jpg);
+    background-size: contain;
+   bottom: -20px;
+   z-index: 1;
+}
+.parent .box .info{
+    margin:  10px;
+}
+.parent .box .info h2{
+    font-size: 25px;
+    color: #222121;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.parent .box .info p , 
+.parent .box .info i {
+    color: var(--second-color);
+    font-size: 14px;
+}
+.parent .box .info p{
+margin-bottom: 20px;
+line-height: 1.5;
+}
+.parent .box .info i {
+  margin: 0 5px;
+}
+.parent .box .info span{
+    color: var(--main-color);
+}
+.parent .box .prog-1{
+    margin:  10px;
+
+}
+.parent .box .prog-1 i{
+    font-size: 13px;
+  color: var(--main-color);
+  padding-right: 5px;
+}
+.parent .box .prog-1 h4{
+    font-size: 14px;
+    color: var(--second-color);
+    text-transform: capitalize;
+}
+.parent .box .prog-1 span{
+    width: 100%;
+    height: 20px;
+    background-color: #eee ;
+    display: block;
+    margin: 10px auto;
+    position: relative;
+}
+.parent .box .prog-1 span::before{
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 20px;
+    background-color: var(--main-color);
+    z-index: 1;
+    border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.parent .box .plan{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.parent .box .plan p{
+    color: #222121;
+    font-size: 20px;
+    padding: 10px;
+}
+.parent .box .plan span{
+    color: var(--second-color);
+    font-size: 15px;
+}

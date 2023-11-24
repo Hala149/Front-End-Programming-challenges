@@ -1,0 +1,121 @@
+
+/* Start Variables */
+:root{
+    --main-color:#FFEB00;
+    --second-color:#515961;
+    --text-color:#7a7c80;
+    --text-color-alt:#b4b3b3;
+    --section-color:#eeeeee;
+    --main-raduis : 6px;
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:"Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+}
+.container{
+    width: 1169px;
+    height: 492px;
+    margin:20px auto;
+    padding: 70px 100px;
+    background-image: url(../img/landing.jpg);
+    background-size: cover;
+    border: 2px solid #fff;
+    outline: 1px solid #555;
+    position: relative;
+}
+.container  p:nth-of-type(1),
+.container  p:nth-of-type(2),
+.container  p:nth-of-type(3),
+.container  p:nth-of-type(4)
+{
+    width: fit-content;
+    padding:  20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+
+}
+.container  p:nth-of-type(1){
+    background-color: var(--second-color);
+    color: white;
+}
+.container  p:nth-of-type(2),
+.container p:nth-of-type(3){
+ background-color: white;
+    color: var(--second-color);
+}
+.container  p:nth-of-type(2){
+    top: 130px;
+}
+.container p:nth-of-type(3){
+    bottom: 177px;
+    right: 165px;
+}
+.container p:nth-of-type(4) {
+    background-color: var(--main-color);
+    color: var(--second-color);
+       bottom: 117px;
+    right: 249px;
+}
+.container div:nth-of-type(1),
+.container div:nth-of-type(2),
+.container div:nth-of-type(3),
+.container div:nth-of-type(4){
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.container div:nth-of-type(1),
+.container div:nth-of-type(3),
+.container div:nth-of-type(4){
+     background-color: var(--second-color);
+    color: white;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+.container div:nth-of-type(1){
+    top:130px ;
+    left: 200px;
+    z-index: 2;
+}
+
+.container div:nth-of-type(2){
+    background-color: var(--main-color);
+    color: var(--second-color);
+    width: 320px;
+    height: 320px;
+    top:60px ;
+    left: 350px;
+    z-index: 1;
+}
+.container div:nth-of-type(3){
+    top:155px ;
+    right: 320px;
+    z-index: 0;
+
+}
+
+.container div:nth-of-type(4){
+ background-color: var(--main-color);
+    color: var(--second-color);
+     top:50px ;
+    right: 150px;
+}
+
+
+

@@ -1,0 +1,137 @@
+/* Start Varibales */
+:root {
+  --main-color:#f2374c;
+}
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+/* End Global Rules  */
+.container{
+    padding: 10px 90px 0;
+    display: flex;
+    gap: 10px;
+}
+/* Start left-side */
+.left-side{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side .frame{
+    width: 450px;
+    height: 400px;
+ border: 15px solid hsla(353, 88%, 58%, 0.507);
+ position: relative;
+}
+.left-side .frame img{
+    width: 110%;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50% );
+    left: -80px;
+}
+
+/* End left-side */
+/* Start right-side */
+.right-side{
+    flex-basis: 50%;
+
+}
+.right-side h1{
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.right-side h4{
+    font-weight: bold;
+    color: var(--main-color);
+    padding-left: 50px;
+    position: relative;
+}
+.right-side h4::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--main-color);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right-side h4::after{
+    content: "";
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 0;
+    border: 1px solid var(--main-color);
+    left: 23px;
+    top: 8px;
+    transform: translateX(-50%);
+}
+.right-side > p{
+    color: #777;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 40px auto;
+}
+.right-side .boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.right-side .boxes .box{
+    flex-basis: 30%;
+    border: 2px solid #ddd;
+    width: 90px;
+    height: 150px;
+    position: relative;
+}
+.right-side .boxes .box::after{
+    content: "";
+    position: absolute;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent  var(--main-color);
+    transform: rotate(314deg);
+    right: -13px;
+    top: -14px;
+}
+.right-side .boxes .box span{
+    color: #ebeced;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 20px ;
+}
+.right-side .boxes .box i{
+    align-self: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50% );
+    color: var(--main-color);
+}
+.right-side .boxes .box p{
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    width: fit-content;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End right-side */

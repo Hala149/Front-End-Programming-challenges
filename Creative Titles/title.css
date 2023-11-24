@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    }
+    :root{
+        --blue: #2c6ccf ;
+        --red:#cf2c2c;
+        --green: #309e0e;
+        --orang:#cd661a;
+    }
+    div{
+        margin: 50px;
+        padding: 0;
+    }
+    h2{
+        color: black;
+       
+    }
+    h3{
+        
+        padding: 20px 0;
+        position: relative;
+        width: 250px;
+        border-bottom: 2px solid #ddd;
+    }
+   
+   h3::before{
+       content: "";
+       position: absolute;
+       width: 50%;
+       height: 2px;
+       bottom: -2px;
+       left: 0;
+   }
+   h3::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    left: -5px;
+}
+  .circle h3::after{
+    border-radius: 50%;
+}
+.tringle-up h3::after{
+    background: none;
+    border-style: solid;
+    border-color:   transparent  transparent var(--green) transparent;
+    border-width: 10px 10px 10px 10px;
+    width: 2px;
+    height: 15px;
+    bottom: 0px;
+    left: 0;
+}
+.tringle-up .blue::after{
+    border-color:   transparent  transparent var(--blue) transparent;
+}
+.tringle-up .red::after{
+    border-color:   transparent  transparent var(--red) transparent;
+}
+.tringle-up .orang::after{
+    border-color:   transparent  transparent var(--orang) transparent;
+}
+.tringle-down h3::after{
+    background: none;
+    border-style: solid;
+    border-color:var(--green)   transparent  transparent  transparent;
+    border-width: 10px 10px 10px 10px;
+    width: 2px;
+    height: 15px;
+    bottom: -37px;
+    left: 0;
+}
+.tringle-down .blue::after{
+    border-color:  var(--blue) transparent  transparent  transparent;
+}
+.tringle-down .red::after{
+    border-color:var(--red)   transparent  transparent  transparent;
+}
+.tringle-down .orang::after{
+    border-color:  var(--orang) transparent  transparent  transparent;
+}
+
+   .blue{
+     color: var(--blue) ;
+   }
+   .blue::before,
+   .blue::after{
+       background-color: var(--blue);
+   }
+   .red{
+    color: var(--red) ;
+  }
+  .red::before,
+  .red::after{
+      background-color: var(--red);
+  }
+  .green{
+    color: var(--green) ;
+  }
+  .green::before,
+  .green::after{
+      background-color: var(--green);
+  }
+  .orang{
+    color: var(--orange) ;
+  }
+  .orang::before,
+  .orang::after{
+      background-color: var(--orang);
+  }

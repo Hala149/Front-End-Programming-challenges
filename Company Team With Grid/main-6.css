@@ -1,0 +1,116 @@
+:root{
+    --darkColor:#000;
+    --lightColor:#fff;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    font-size: 12px;
+
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+
+}
+.layout{
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(10, auto) ;
+    grid-template-rows: repeat(4, auto);
+    gap: 7px;
+    grid-template-areas:
+     "sec1 sec1 sec1 sec1 sec2 sec2 sec3 sec3 "
+     "sec4 sec4 sec5 sec5 sec5 sec5 sec3 sec3 " 
+     "sec4 sec4 sec6 sec6 sec6 sec6 sec3 sec3 "
+     "sec7 sec7 sec8 sec8 sec9 sec9 sec10 sec10 ";
+     justify-content: end;
+
+    }
+    
+.layout div{
+     padding: 0 10px;
+    border-bottom:3px solid  #f44336; 
+    position: relative;
+}
+.layout div::after{
+    content: "''" ;
+    color: gray;
+    font-size: 20px;
+    transform: rotate(15deg);
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    bottom: -9px;
+    
+    
+   
+}
+.section-1{
+     background-color: var(--lightColor);
+    grid-area: sec1;
+}
+.section-2{
+     background-color: var(--lightColor);
+    grid-area: sec2;
+}
+.section-3{
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    grid-area: sec3;
+}
+.section-4{
+     background-color: var(--lightColor);
+    grid-area: sec4;
+}
+.section-5{
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    grid-area: sec5;
+}
+.section-6{
+     background-color: var(--lightColor);
+    grid-area: sec6;
+}
+.section-7{
+     background-color: var(--lightColor);
+    grid-area: sec7;
+}
+.section-8{
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    grid-area: sec8;
+}
+.section-9{
+     background-color: var(--lightColor);
+    grid-area: sec9;
+}
+.section-10{
+     background-color: var(--lightColor);
+    grid-area: sec10;
+}
+      
+h1{
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-bottom: 0;
+       
+    }
+    
+
+h4{
+    text-transform: capitalize;
+    padding-top:0;
+    color: gray;
+    font-size: 10px;
+    padding-top: 1px ;
+}
+.p-bold{
+    font-weight: bold;
+}
+
+

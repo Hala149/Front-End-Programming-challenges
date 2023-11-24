@@ -1,0 +1,139 @@
+
+/* Start Variables */
+:root{
+    --main-color:#242424;
+    --text-color:rgb(206, 206, 206);
+    --text-color-alt:#676766;
+    --main-raduis : 7px;
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.boxes{
+    width: 90%;
+    background-color: #e2eef6;
+    margin: 20px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.boxes .box{
+    padding: 20px ;
+    text-align: center;
+    background-color: white;
+    border-radius: var(--main-raduis);
+    
+}
+
+.boxes .box.box-2 {
+   margin-top: 50px;
+
+}
+.boxes .box.box-3 {
+   margin-top: 100px;
+
+}
+.boxes .box h3{
+    font-size: 25px;
+    width:fit-content;
+    color: white;
+    padding: 10px 45px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    left: -30px;
+}
+.boxes .box h3::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-style: solid;
+    border-width: 5px;
+}
+.boxes .box.box-1 h3::before{
+    border-color: transparent #13C8A6 #13C8A6 transparent;
+
+}
+.boxes .box.box-2 h3::before{
+    border-color: transparent #EFCB53 #EFCB53 transparent;
+
+}
+.boxes .box.box-3 h3::before{
+    border-color: transparent #555FAE #555FAE transparent;
+
+}
+.boxes .box.box-1 h3{
+    background-color: #13C8A6;
+}
+.boxes .box.box-2 h3{
+        background-color: #EFCB53;
+
+}
+.boxes .box.box-3 h3{
+       background-color: #555FAE;
+
+}
+.boxes .box p{
+    font-size: 50px;
+    position: relative;
+    font-weight: normal;
+}
+.boxes .box p span{
+    font-size:45px ;
+    position: absolute;
+    font-weight: normal;
+    top: -5px;
+    left: 85px;
+}
+.boxes .box div{
+    padding: 15px 80px;
+    font-size: 15px;
+    color: var(--text-color-alt);
+    text-transform: capitalize;
+}
+.boxes .box div:first-of-type,
+.boxes .box div:last-of-type{
+   margin-bottom: 20px;
+}
+
+
+
+button{
+    background-color: inherit;
+    padding: 15px 35px;
+    outline: none;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: var(--main-raduis);
+
+}
+.box-1 button{
+    background-color: #13C8A6;
+}
+.box-2 button{
+    background-color: #EFCB53;
+}
+.box-3 button{
+    background-color: #555FAE;
+}

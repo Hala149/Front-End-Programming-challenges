@@ -1,0 +1,189 @@
+/* Start Varibales */
+:root{
+      
+        --bb-blue: #009688 ;
+        --pink:#e91e63;
+        --red:#f44336;
+        --blue: #2196f3;
+        --border-color: #f1f1f1;
+    }
+   /* Start Globsl Ruls */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0; */
+        background-color: #eee;
+
+}
+
+/* End Globsl Ruls */
+/* Start Container */
+.container{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-areas: 'sale sale sale sale '
+    'basic basic professional professional';
+    column-gap : 20px;    /* align-items:flex-start; */
+ }
+.container .save{
+    display: grid;
+    justify-content:flex-end ;
+    grid-area: sale;
+    margin: 10px;
+  
+}
+.container .save p{
+    background-color: var(--blue);
+    color: white;
+    padding:20px ;
+    padding-right: 65px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+.save p::after{
+    content: "";
+    position: absolute;
+    border-color: var(--blue) #eee var(--blue) var(--blue);
+    border-style: solid;
+    border-width: 31px;
+    top: 0;
+    right: 0;
+    
+}
+.head{
+    margin: 0;
+    padding:  20px 50px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+.container .basic .head{
+    background-color: var(--red);
+
+}
+.container .professional .head{
+    background-color: var(--blue);
+
+}
+ .container .basic,
+ .container .professional{
+    background-color: white;
+    border-radius: 10px  10px 0 0;
+    margin: 0px;
+    padding:0 px;
+    /* line-height: 75px; */
+ }
+ .container .basic{
+     grid-area: basic;
+ }
+ .container .professional{
+    grid-area: professional;
+ }
+ .container .basic .basic-offers p ,
+ .container .professional .professional-offers p{
+   padding: 20px;
+   padding-left: 20px;
+   font-size: 20px;
+   margin: 0;
+   /* background-color: var(--red); */
+ }
+.container .basic .basic-offers p:not(:first-child),
+.container .basic .basic-offers p:not(:last-child),
+.container .professional .professional-offers p:not(:first-child),
+.container .professional .professional-offers p:not(:last-child){
+    border-bottom: 1px solid var(--border-color);
+} 
+ span{
+     width: 20px;
+     height: 20px;
+     color: white;
+     background-color: var(--bb-blue);
+     border-radius: 50%;
+     display: inline-block;
+     position: relative;
+     margin-right: 5px;
+ }
+ span::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 3px;
+    background-color: white;
+    top: 10.5px;
+    left: 4px;
+    transform: rotate(45deg);
+    z-index: 2;
+ }
+ span::after{
+     content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background-color: white;
+    bottom: 8px;
+    right: 2px;
+    transform: rotate(133deg);
+z-index: 2;
+ }
+
+  .false{
+     background-color: var(--pink);
+     position: relative;
+ }
+ .false::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    top: 9px;
+    left: 5px;
+    transform: rotate(130deg);
+    z-index: 2;
+ }
+ .false::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    bottom: 9px;
+    right: 5px;
+    transform: rotate(45deg);
+ z-index: 2;
+ }
+
+ .mark{
+     position: relative;
+ }
+ .mark::before{
+    content: "?";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right:30px;
+   background-color: gray;
+   color: white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+
+    z-index: 2;
+ }
+
+
+ 
+/* End Varibales */

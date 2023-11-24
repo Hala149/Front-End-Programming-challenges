@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurant Orders List</title>
+   <!-- main Template Css File -->
+   <link rel="stylesheet" href="css/order.css" />
+   <!-- Render All Elements Normally-->
+   <link rel="stylesheet" href="css/normalize.css" />
+   <!-- Font Awesome Library-->
+   <link rel="stylesheet" href="css/all.min.css" />
+   <!-- line Awesome Library-->
+   <link rel="stylesheet" href="css/line-awesome.min.css" />
+   <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /> -->
+   <!-- Google Fonts Library -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <!-- Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <div class="container">
+      <div class="content">
+         <div>
+            <h3>order list</h3>
+            <i class="las la-ellipsis-h"></i>
+         </div>
+         <form action="">
+            <input type="search" placeholder="Invoice Search ">
+            <input type="search" placeholder="Search by Title">
+            <input type="search" placeholder="Search by Phone">
+            <!-- <input type="button" value="search"> -->
+            <button>Search</button>
+         </form>
+         <!-- Start Table  -->
+         <table>
+            <!-- Start Header Table  -->
+            <tr>
+               <th class="two">
+                  <p><input type="checkbox" id="check">
+                     <label for="check">Invoice</label>
+                  </p>
+               </th>
+               <th>image</th>
+               <th>menu<i class="fas fa-caret-down"></i></th>
+               <th>customer name<i class="fas fa-caret-down"></i></th>
+               <th>quantity</th>
+               <th>amount<i class="fas fa-caret-down"></i></th>
+               <th>order status<i class="fas fa-caret-down"></i></th>
+               <th>phone<i class="fas fa-caret-down"></i></th>
+               <th></th>
+            </tr>
+            <!-- End Header Table  -->
+            <!-- Start Table Body -->
+            <tr>
+               <td class="two">
+                  <p><input type="checkbox" id="a">
+                     <label for="a">#1150</label>
+                  </p>
+               </td>
+               <td><img src="img/image1.jpg" alt="image1"></td>
+               <td>cheese pizza</td>
+               <td>mark willy</td>
+               <td><span>05</span></td>
+               <td>$2,590</td>
+               <td><button>confirmed</button></td>
+               <td>+123 9856047</td>
+               <td><i class="las la-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+               <td class="two">
+                  <p><input type="checkbox" id="b">
+                     <label for="b">#1151</label>
+                  </p>
+               </td>
+               <td><img src="img/image2.jpg" alt="image2"></td>
+               <td>big burger</td>
+               <td>mitdila zamam</td>
+               <td><span>03</span></td>
+               <td>$1,590</td>
+               <td><button class="pending">pending</button></td>
+               <td>+123 9856047</td>
+               <td><i class="las la-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+               <td class="two">
+                  <p><input type="checkbox" id="c">
+                     <label for="c">#1152</label>
+                  </p>
+               </td>
+               <td><img src="img/image3.jpg" alt="image3"></td>
+               <td>chicken pasta</td>
+               <td>siddikur rahmam</td>
+               <td><span>05</span></td>
+               <td>$2,590</td>
+               <td><button>confirmed</button></td>
+               <td>+123 9856047</td>
+               <td><i class="las la-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+               <td class="two">
+                  <p><input type="checkbox" id="d">
+                     <label for="d">#1153</label>
+                  </p>
+               </td>
+               <td><img src="img/image4.jpg" alt="image4"></td>
+               <td>chicken pasta</td>
+               <td>siddikur rahmam</td>
+               <td><span>05</span></td>
+               <td>$2,590</td>
+               <td><button>confirmed</button></td>
+               <td>+123 9856047</td>
+               <td><i class="las la-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+               <td class="two">
+                  <p><input type="checkbox" id="e">
+                     <label for="e">#1154</label>
+                  </p>
+               </td>
+               <td><img src="img/image5.jpg" alt="image5"></td>
+               <td>big burger</td>
+               <td>mitdila zaman</td>
+               <td><span>03</span></td>
+               <td>$1,590</td>
+               <td><button class="pending">pending</button></td>
+               <td>+123 9856047</td>
+               <td><i class="las la-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+               <td class="two">
+                  <p><input type="checkbox" id="f">
+                     <label for="f">#1155</label>
+                  </p>
+               </td>
+               <td><img src="img/image6.jpg" alt="image6"></td>
+               <td>chicken pasta</td>
+               <td>siddikur rahmam</td>
+               <td><span>05</span></td>
+               <td>$2,590</td>
+               <td><button>confirmed</button></td>
+               <td>+123 9856047</td>
+               <td><i class="las la-ellipsis-h"></i></td>
+            </tr>
+            <!-- End Table Body -->
+         </table>
+         <!-- End Table  -->
+         <div>
+            <p>
+               showing 1-30 / 150 results
+            </p>
+            <div class="pages">
+               <a href="#">previous</a>
+               <a href="#" class="number active" >1</a>
+               <a href="#" class="number">2</a>
+               <a href="#" class="number">3</a>
+               <a href="#" class="number">4</a>
+               <a href="#">next</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>

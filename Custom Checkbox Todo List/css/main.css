@@ -1,0 +1,113 @@
+/* Start Varibales  */
+:root{
+    --main-color: #009688;
+}
+/* End Varibales  */
+/* Start Global  Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* End Global  Rules  */
+.articles{
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+form{
+    position: relative;
+}
+form::before
+{
+    content: "Articles";
+    position: absolute;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    padding:9px 19px;
+    top: 10px;
+    left: -10px;
+}
+form::after{
+    content: "";
+    position: absolute;
+    border-width: 5px ;
+    border-style: solid;
+    border-color: var(--main-color)  var(--main-color) transparent transparent ;
+    top: 50px;
+    left: -10px;
+
+}
+ form > div{
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.articles form{
+    background-color: white;
+    padding:70px 20px 20px;
+
+}
+form input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+form label{
+    position: relative;
+    padding-left: 25px;
+}
+form label::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: .5px solid #CCC;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+}
+form input[type="radio"]:checked + label::after{
+    content: "";
+    position: absolute;
+    width: 10px ;
+    height:  10px;
+    background-color: var(--main-color);
+    left: 3px;
+    top: 4px;
+    border-radius: 3px;
+
+}
+form input[type="radio"].art-1:checked::before,
+form input[type="radio"].art-2:checked::before,
+form input[type="radio"].art-3:checked::before{
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: black;
+  top: -5px;
+  left: 28px;
+  
+
+}
+ form input[type="radio"].art-1:checked::before{
+  width: 310px;
+}
+
+form input[type="radio"].art-2:checked::before{
+    width: 400px;
+}
+form input[type="radio"].art-3:checked::before{
+    width: 235px;
+} 

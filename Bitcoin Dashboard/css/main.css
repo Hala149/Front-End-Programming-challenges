@@ -1,0 +1,320 @@
+/* Start Varibales */
+:root{
+    --main-color:#0d40c6;
+    --main-color-alt: #1652f0;
+    --border-color:#eef2fe;
+   --text-color: #9eacc1;
+   --text-color-alt: #808791;
+
+}
+/* End Varibales */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* End Global Rules */
+/* Start container  */
+.container{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+/* End Container */
+/* Start container  */
+.container .left-side{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 5%;
+    flex-direction: column;
+    padding: 5px;
+    background-color: var(--main-color) ;
+    padding-top: 100px;
+
+}
+.container .left-side a{
+    margin: 5px;
+}
+.container .left-side a:nth-of-type(2){
+    background-color: rgb(20 82 240  / 90%);
+    z-index: 1;
+    border-radius: 5px;
+}
+.container .left-side a:hover{
+    background-color: rgb(20 82 240  / 90%);
+    z-index: 1;
+    border-radius: 5px;
+}
+.container .left-side i{
+    color: white;
+    padding: 10px;
+    font-size: normal;
+}
+/* End Container */
+/* Start container  */
+.container .right-side{
+    flex-basis: 95%;
+    
+}
+.container .right-side .header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 50px;
+}
+.right-side .header .logo {
+    position: relative;
+    padding: 20px;
+}
+.right-side .header .logo::before{
+    content: "t";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color-alt);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    left: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.right-side .header .logo h2 {
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-shadow: -1px 0px 2px;
+}
+.right-side .header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    /* gap: 20px; */
+}
+.right-side .header .menu p{
+    border: 1px solid var(--border-color);
+    padding:10px 20px;
+    font-weight:500;
+}
+.right-side .header .menu p:first-of-type{
+    background-color:  var(--border-color);
+    border-radius: 30px 0 0 30px;
+    color: var(--main-color-alt);
+}
+.right-side .header .menu p:last-of-type{
+    border-radius: 0 30px  30px 0;
+    color: var(--text-color);
+
+}
+.right-side .header .menu i{
+    margin: 0px 10px 0px 15px ;
+
+}
+.right-side .header .menu i.fa-1x{
+    padding: 10px;
+    color: white;
+    background-color: var(--main-color-alt);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.right-side .header .menu h4,
+.right-side .header .menu h4 i{
+    color: var(--text-color);
+}
+.right-side .header .menu h4{
+    font-weight: normal;
+}
+.hi{
+  margin: 20px 40px;
+  color: var(--main-color);
+}
+.hi span{
+    color: var(--text-color);
+  }
+.sections{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sections .section{
+    padding: 30px 50px 0;
+}
+.sections .section:first-of-type{
+    flex-basis: 42%;
+}
+.sections .section:last-of-type{
+    flex-basis: 58%;
+}
+.sections .section .buttons{
+    text-align: center;
+}
+.sections .section .buttons button{
+    min-width: 12rem;
+    min-height: 33px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sections .section .buttons button:first-of-type{
+    color: white;
+    border: none;
+    background: var(--main-color);
+}
+.sections .section .buttons button:last-of-type{
+    background-color: white;
+    border: 1px solid var(--border-color);
+    color: var(--main-color);
+    min-height: 34px;
+    margin-left: 15px;
+}
+.sections .section p{
+    margin: 20px 0px 10px;
+    font-size: 12px;
+    /* text-shadow: 0px 0px 0px; */
+}
+.sections .section .info{
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    background-color: var(--border-color);
+    color: var(--text-color);
+    padding: 10px 15px;
+
+}
+.sections .section .info p,
+.sections .section .seller-info p{
+    margin: 0;
+}
+
+.sections .section .info p:last-of-type{
+    position: absolute;
+    left: 22%;
+}
+
+.sections .section .info p i{
+    margin-right: 22px;
+}
+.sections .section .limit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;   
+}
+.sections .section .limit p:first-of-type{
+    color: var(--text-color);
+
+}
+.sections .section .limit p:last-of-type{
+    color: var(--text-color-alt);
+
+}
+.section .ex{
+    width: 100%;
+    min-height: 33px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #10d876;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+.sections p.last {
+    color: var(--text-color);
+    line-height: 1.5;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+.sections .section .seller-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: var(--border-color);
+    color: var(--text-color);
+    margin: 10px;
+    font-size: 12px;
+    padding: 10px 15px;
+    position: relative;
+}
+.sections .section .seller-info p:last-of-type{
+    position: absolute;
+    left: 40%;
+}
+.section .persons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+        gap: 10px;
+ margin-bottom: 25px;
+}
+.section .persons .image{
+    align-self: flex-start;
+}
+.section .persons .image img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.section .persons .person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.section .persons .person .buyer ,
+.section .persons  .person .seller{
+    display: flex;
+    flex-direction: column;
+    
+}
+.section .persons .person .buyer p ,
+.section .persons  .person .seller p{
+    margin: 10px 0;
+}
+.section .persons  .person .seller{
+    align-items: flex-end;
+}
+.section .persons .person {
+    font-size: 15px;
+    margin: 0;
+} 
+.section .persons .person a{
+    color: var(--main-color-alt);
+    font-size: 12px;
+}
+/* End Container */
+/* My Frame WORK  */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    color: red;
+}
+.main-color{
+    color: var(--main-color);
+}

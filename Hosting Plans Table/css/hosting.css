@@ -1,0 +1,131 @@
+
+/* Start Variables */
+:root{
+    --main-color:#FC5103;
+    --bg-color: #333333;
+    --footer-color:#2B2B2B;
+    --text-color:#686666;
+    --text-color-alt:#b5b0b4;
+    --section-color:#030303;
+    --main-raduis : 10px;
+    --m : linear-gradient(to right, #bc6eff 20%, #65e2ff);
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+   font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+  font-size: 18px;
+
+}
+/* Small Screen */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medim Screen */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large Screen */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Globsl Ruls */
+.container table{
+  margin-top: 20px;
+  border-collapse: collapse;
+    width: 100%;
+}
+.container table thead{
+  background-color: var(--main-color);
+  color: white;
+}
+.container table thead th{
+  padding: 30px;
+    font-weight: normal;
+    border: 1px solid #f56b2b;
+
+}
+.container table tbody td{
+    border: 1px solid #eeeeee;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.container table tbody td:first-of-type{
+      color: var(--text-color-alt);
+}
+.container table tbody tr:nth-child(even){
+  background-color: #f7f7f7;
+}
+.container table .first td{
+   padding: 30px 40px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 55px;
+  /* font-weight: bold; */
+  position: relative;
+}
+.container table .first td span{
+  color: var(--text-color);
+  font-size: 20px;
+}
+.container table .first td span:first-of-type{
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+.container table .first td span:last-of-type{
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.container table .first td:not(:first-of-type):before{
+  content: "Year";
+  position: absolute;
+  color: var(--text-color-alt);
+  font-size: 17px;
+  bottom: 20px;
+  right: 30px;
+}
+.container table tbody tr:not(.first)  td {
+    padding: 20px;
+    text-align: center;
+}
+.container table .last button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: var(--main-raduis);
+  color: white;
+  background-color: #333333;
+}
+.container table .last td:nth-last-of-type(3) button{
+  background-color: var(--main-color);
+}
+/* MY FRAMEWORK  */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

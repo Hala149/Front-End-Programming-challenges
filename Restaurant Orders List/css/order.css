@@ -1,0 +1,272 @@
+
+/* Start Variables */
+:root{
+   --darkBlue:#4d33a0;
+    --lightBlue:#6f25a0;
+    --green:#34e2c1;
+    --yellow:#ffb749;
+    --text-color:#7B7B7B ;
+    --text-color-alt:#eee;
+    --radius:4px;
+    --scal:0.9;
+    --main-raduis : 3px;
+    --m : linear-gradient(to right,#42379E  20%,#6F25A0 100% );
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans Condensed', sans-serif;    */
+        /* font-family: "Cairo", sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: #f0f1f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Small Screen */
+/* @media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+} */
+/* Medim Screen */
+/* @media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+} */
+/* Large Screen */
+/* @media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+} */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+    width: 1100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px auto 0;
+    background-color: #eee;
+}
+i{
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-weight: 400px;
+    font-size: 20px;
+}
+/* End Globsl Ruls */
+
+.fa-caret-down{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text-color);
+}
+
+img{
+  width: 100%;
+}
+
+.container .content{
+    background-color: white;
+    padding: 10px 40px;
+}
+.container .content div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .content div h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #252525;
+    font-weight: bold;
+}
+.container .content div i{
+    color: var(--text-color);
+    padding: 29px;
+    cursor: pointer;
+    padding: 0;
+}
+.container .content form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .content form input{
+    border: none;
+    outline: none;
+    background-color: var(--text-color-alt);
+    width: 340px;
+    margin-right: 20px;
+    padding: 10px 8px ;
+    max-width: 100%;
+}
+.container .content form input:first-of-type{
+    width: 160px;
+
+}
+
+.container .content form input::placeholder{
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+}
+.container .content form button {
+    background-image: var(--m);
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--radius);
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+table {
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    position: relative;
+    color: #314e5c;
+}
+table tr{
+    cursor: pointer;
+}
+table tr td:not(:last-of-type){
+    border-bottom: 1px solid var(--text-color-alt);
+}
+table tr th {
+     border-bottom: 3px solid var(--text-color-alt);
+     padding: 0 10px;
+     text-transform: capitalize;
+}
+table tr td{
+   padding:5px 10px;
+   position: relative;
+   text-transform: capitalize;
+
+}
+table tr td:first-child p,
+table tr th:first-child p{
+     display: flex;
+   align-items: center;
+
+}
+ table tr td:nth-child(5) span {
+  border: 2px solid #ddd;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 100%;
+}
+ table  tr td:nth-child(7) button {
+  border: none;
+  background: #2ce5c0;
+  width: 75px;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 100;
+}
+table tbody tr td button.pending {
+  background: #ffb74d;
+  padding: 6px 13.6px;
+}
+.container .content  table  tr td:nth-child(9) i {
+  font-size: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid #CCC;
+    border-radius: 3px;
+    margin-right: 6px;
+    position: relative;
+
+}
+input[type="checkbox"]:checked  {
+    background: var(--m);
+    box-shadow: 0px 0px 12px 0 #6f25a0;
+    border: none;
+
+}
+ table td input[type="checkbox"]:checked  + label ,
+ table td input[type="checkbox"]:checked    {
+    color: var(--text-color);
+    font-weight: bold;
+
+}
+ label{
+    position: relative;
+    cursor: pointer;
+}
+table  tr:nth-child(n + 2) {
+  color: #7c8e96;
+}
+.container .content div:last-of-type {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .content div p {
+  font-size: 14px;
+  color: #57727f;
+}
+.container .content .pages {
+  display: flex;
+  align-items: center;
+}
+.container .content  a:not(a.number) {
+  text-decoration: none;
+
+  margin: 0px 12px 0px 12px;
+  font-size: 13px;
+  color: #777777c9;
+  font-weight: 600;
+}
+.container .content  .pages a.number {
+  border: 2px solid #ddd;
+  color: #57727f;
+  font-weight: 600;
+  text-decoration: none;
+  width: 33px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 2px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.container .content  .pages a.active,
+.container .content  .pages a.number:hover {
+  background-color: #46359e;
+  color: white;
+  border: none;
+}

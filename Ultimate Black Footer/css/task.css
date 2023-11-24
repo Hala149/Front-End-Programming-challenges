@@ -1,0 +1,164 @@
+
+/* Start Variables */
+:root{
+    --main-color:#4E96C5;
+    --bg-color: #333333;
+    --footer-color:#2B2B2B;
+    --text-color:#7a7c80;
+    --text-color-alt:#b4b3b3;
+    --section-color:#eeeeee;
+    --main-raduis : 3px;
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+h3{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+p , a, h5{
+    color: var(--text-color);
+    font-size: 12px;
+    text-transform:capitalize
+
+}
+
+.black{
+    padding: 20px 150px;
+    background-color: var(--bg-color);
+    color: white;
+    display: flex;
+    gap: 25px;
+}
+.black .contact-us,
+.black .letter{
+    flex-basis: 35%;
+}
+.black .contact-us p,
+.black .letter p{
+    text-transform: none;
+}
+.black .contact-us .detailes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(98% / 1);
+
+}
+.black .contact-us .detailes span{
+    color: var(--text-color);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.black .contact-us .detailes h5{
+    margin: 5px 0;
+    display: block;
+    width: 150px;
+    color: white;
+    font-weight: normal;
+}
+.black .contact-us .detailes div:nth-of-type(3) ,
+.black .contact-us .detailes div:nth-of-type(4) {
+    margin-top: 20px;
+}
+.black .information a,
+.black .account a{
+    margin-bottom: 10px;
+}
+.black .information ,
+.black .account{
+    flex-basis: 15%;
+}
+.black .letter{
+    margin-bottom: 30px;
+}
+.black .letter form input[type="email"]{
+    background-color: #4c4c4c;
+        padding: 10px 50px 10px 10px ;
+
+
+}
+.black .letter form input[type="email"],
+.black .letter form button{
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: var(--main-raduis);
+        font-size: 13px;
+}
+.black .letter input::placeholder{
+        color:var(--text-color-alt)
+
+}
+.black .letter form button{
+    background-color: #e52727;
+        padding: 10px 20px;
+    
+}
+.black .letter .icons{
+    margin-top: 10px;
+}
+.black .letter .icons i{
+    
+    padding: 8px;
+    border-radius: 50%;
+    margin: 0 3px 0 0;
+    cursor: pointer;
+}
+.black .letter .icons i:first-of-type{
+    background-color:#3c5a99 ;
+}
+.black .letter .icons i:nth-of-type(2){
+    background-color:#00a2e8 ;
+}
+.black .letter .icons i:nth-of-type(3){
+    background-color: #e52727 ;
+}
+.black .letter .icons i:nth-of-type(4){
+    background-color:#815dc7 ;
+}
+.black .letter .icons i:last-of-type{
+    background-color: #f9be37;
+}
+
+
+.footer{
+        padding: 20px 150px;
+    background-color: var(--footer-color);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer .info span{
+    color: white;
+    font-weight: bold;
+}
+
+.footer .image{
+    display: flex;
+    gap: 10px;
+}
+.footer .image img{
+    width: 40px;
+    height: 20px;
+}
+
+/* My FrameWork  */

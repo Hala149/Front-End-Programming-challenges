@@ -1,0 +1,234 @@
+/* Start Globsl Ruls */
+:root{
+   
+    --centerliz : center ;
+    --section-color: #f6f6f6 ;
+     --bb-blue: #218c74 ;
+     --pink:#e91e63;
+     --green: #218c74;
+     --blue: #03a9f4;
+     --border-color: #f1f1f1;
+
+     --main-padding: 30px ;
+ }
+ *{
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ h2{
+     font-size: 35px;
+     margin-bottom: 10px;
+ }
+ p {
+     color: #05070a;
+     line-height: 1.7;
+ }
+/* Small Screen */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medim Screen */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large Screen */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Globsl Ruls */
+/* Start Header */ 
+header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+header .container { 
+    justify-content: space-between;
+
+}
+header .logo{
+    width: 10%;
+    justify-content: var(--centerliz);
+    align-items: var(--centerliz);
+    font-size: 25px;
+    font-weight: bold;
+
+} 
+header .links  {
+    width: 88%;
+    list-style: none;
+    justify-content:flex-end;
+    align-items: var(--centerliz);
+    column-gap: 20px;
+
+}
+
+/* End Header  */
+/* Start Services */
+ .services {
+     padding-top: var(--main-padding);
+     padding-bottom: var(--main-padding);
+    background-color: var(--section-color);
+    text-align: center;
+
+}
+.services  span{
+    color: var(--blue);
+}
+.services p{
+    text-align: center;
+    line-height: 2;
+    margin-top: 0;
+    
+}
+/* End Services  */
+/* Start Articles */
+article{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+article .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(300px ,1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+article .box{
+    padding: 10px;
+
+    flex-direction: column;
+    align-items: center;
+}
+article .box img{
+    width: 100px;
+}
+article .box p{
+    text-align: center;
+    color: #777;
+    margin-top: 0;
+}
+/* End Articles */
+/* Start About */
+.about{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+   background-color: var(--section-color);
+}
+.about .container{
+    justify-content: space-between;
+    gap: 30px;
+}
+.about .image img{
+    width: 500px;
+} 
+.about .info  {
+    list-style: none;
+    flex-direction: column;
+    column-gap: 20px;
+
+}
+ /* End About */
+/* Start Count */
+.count{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.count .container{
+    justify-content: center;
+    gap: 30px;
+}
+.count h3{
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.count .serv ,
+.count .design ,
+.count .clints {
+    width: 500px;
+   flex-direction: column;
+   padding: 20px;
+   color: white;
+}
+.count .serv {
+    background-color:#b33939 ;
+}
+.count .design {
+    background-color:#227093 ;
+}
+.count .clints {
+    background-color:#218c74 ;
+}
+/* End Count */
+/* Start Our SKills */
+.skills{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+   background-color: var(--section-color);
+}
+.skills .container{
+    text-align: center;
+}
+.skills .prog-holder {
+    justify-content: flex-start;
+    margin: 0;
+    gap: 20px;
+}
+ .skills .prog-holder h4{
+    font-weight: normal;
+    font-weight: bold;
+    width: fit-content;
+    align-items: flex-end;
+}
+ .skills .prog-holder .prog{
+    width: 80%;
+    background-color: white;
+    height: 40px;
+}
+ .skills .prog-holder .prog span{
+    display: block;
+    background-color: var(--blue);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    color: white;
+}
+/* End Our SKills */
+/* start Footer */
+.footer{
+    background-color:#333 ;
+    color: white;
+}
+.footer .container{
+    margin-top: 20px;
+    height: 60px;
+    justify-content: space-between;
+}
+.footer span{
+    color: var(--blue);
+}
+/* My FrameWork */
+.display-flex{
+    display: flex;
+    align-items: center;
+}

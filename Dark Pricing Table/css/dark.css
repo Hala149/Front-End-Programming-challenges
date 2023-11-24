@@ -1,0 +1,116 @@
+
+/* Start Variables */
+:root{
+    --main-color:#242424;
+    --text-color:rgb(206, 206, 206);
+    --text-color-alt:#676766;
+    --main-raduis : 5px;
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px ;
+    width: calc(100%-100px /4);
+}
+.boxes .box:first-of-type{
+    border-right: 1px solid #3939#1fb2f539;
+}
+.boxes .box{
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    border-right: 1px solid #393939;
+}
+
+.boxes .box.custom{
+    padding: 70px 0;
+    background-color: #03a9f4;
+
+}
+
+.boxes .box.box.custom div:nth-child(even) {
+    border-bottom: 1px solid #1fb2f5;
+    border-top: 1px solid #1fb2f5;
+
+}
+.boxes .box.box.custom div:first-of-type{
+    border-top: 1px solid #1fb2f5;
+}
+.boxes .box h3{
+    font-size: 22px;
+}
+.boxes .box p{
+    font-size: 25px;
+    position: relative;
+    font-weight: bolder;
+}
+.boxes .box span{
+    font-size:15px ;
+    position: absolute;
+    font-weight: normal;
+}
+.boxes .box p .icon{
+    top: -5px;
+    left: 90px;
+}
+.boxes .box  .mo{
+    bottom: 0;
+    right:  70px;
+}
+
+.boxes .box ul{
+    position: relative;
+}
+.boxes .box ul li{
+    padding: 20px;
+}
+.boxes .box div{
+    padding: 15px 80px;
+    font-size: 12px;
+}
+.boxes .box div:first-of-type{
+    border-top: 1px solid #393939;
+}
+.boxes .box:not(.custom) > div:nth-child(even) {
+    background-color:#2a2a2a;
+}
+.boxes .box:not(.custom) div {
+    color: var(--text-color-alt);
+}
+.boxes .box div:nth-child(even) {
+    border-bottom: 1px solid #393939;
+    border-top: 1px solid #393939;
+
+}
+.boxes .box div:last-of-type{
+    margin-bottom: 50px;
+}
+button{
+    background-color: inherit;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+}

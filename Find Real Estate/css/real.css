@@ -1,0 +1,150 @@
+
+/* Start Variables */
+:root{
+    --main-color:#0EAAA6;
+    
+    --main-raduis : 2px;
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+   /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Open Sans Condensed', sans-serif;    */
+        /* font-family: "Cairo", sans-serif; */
+        font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: #007bff;
+}
+ul {
+  list-style: none;
+}
+.container {
+    width: 1100px;
+    padding: 50px 30px;
+    margin: 20px auto;
+    position: relative;
+}
+.container .search{
+  background-color: #000000;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  position: relative;
+}
+.container .search::before,
+.container .search::after{
+  content: "$";
+  position: absolute;
+  width: 38px;
+  height: 40px ;
+  background-color: #f7f7f7;
+  border-right: 1px solid #e2e2e2;
+  border-radius: var(--main-raduis) 0 0  var(--main-raduis)  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25px;
+  z-index: 20;
+}
+.container .search::before{
+  left: 446px;
+}
+.container .search::after {
+  right: 328px;
+}
+.container .search form{
+      position: relative;
+}
+.container .search form::before,
+.container .search form::after{
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #757575 transparent transparent transparent;
+  top: 23px;
+}
+.container .search form::before{
+  left: 260px;
+}
+.container .search form::after {
+  right: 560px;
+}
+.container .search form input{
+  width: 17%;
+
+}
+.container .search form input,
+.container .search form select ,
+.container .search form button{
+  outline: none;
+  border-color: transparent;
+  border-radius: var(--main-raduis);
+  padding: 10px;
+  margin: 5px;
+  text-indent: 5px ;
+}
+.container .search form select{
+  color: #757575;
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.container .search form select:first-of-type{
+  width: 12%;
+}
+.container .search form select:last-of-type{
+    width: 8%;
+
+}
+.container .search form .price{
+  width: 23%;
+  text-indent: 30% ;
+  position: relative;
+}
+
+.container .search form button{
+  width: 8%;
+  font-size: 14px;
+  background-color:var(--main-color);
+  color: white;
+  margin: 0;
+
+}
+.container  .details{
+  background-color: var(--main-color);
+  padding: 40px 50px 10px;
+  color: white;
+  text-align: center;
+}
+.container  .details h3{
+  margin: 0;
+  letter-spacing: 0.9px;
+  font-size: 25px;
+  font-weight: normal;
+}
+.container .details p{
+  font-style: italic;
+}
+
+/* MY FRAMEWORK  */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

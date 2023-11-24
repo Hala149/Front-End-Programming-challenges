@@ -1,0 +1,131 @@
+:root{
+    --orang: #fb4c02 ;
+    --blue:#5c7e8c;
+    --border-color:#f1f1f1;
+}
+/* Start Globsl Ruls */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Cairo", sans-serif;
+   
+
+}
+/* Start Component */
+h2{
+    color: white;
+    background-color:#607d8b ;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 10px 0 80px;
+}
+/* End Component */
+/* End Globsl Ruls */
+/* Start Container */
+.container{
+   margin: 0 auto;
+   padding: 0 30px ;
+   border: 2px solid  var( --border-color); ;
+}
+.container .products{
+    /* background-color: var( --border-color); */
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .container .products .product{
+    border: 6px solid  var( --border-color);
+     flex-basis: 23%;
+     text-align: center;
+     position: relative;
+
+ }
+ .container .products .product img{
+     width: 100%;
+     margin-bottom: 10px;
+ }
+ .container .products .product p{
+     text-align: center;
+     color: #777;
+     font-size: 20px;
+     margin:10px 0;
+ }
+ .container .products .product .line{
+     margin-bottom: 10px;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+ }
+ .container .products .product .line::before,
+ .container .products .product .line::after{
+     content: "";
+     position: absolute;
+     background-color: #ccc;
+     top: 15px;
+     width: 75px;
+     height: 1px;
+     display: block;
+ }
+ .container .products .product .line::before{
+     right: 10px;
+ }
+ .container .products .product .line::after{
+     left: 10px;
+ }
+ .container .products .product .line[title="less"]{
+     color: #f00;
+ }
+ .container .products .product .line[title="less"]::before,
+ .container .products .product .line[title="less"]::after{
+     content: "";
+     position: absolute;
+     background-color: #ccc;
+     top: 15px;
+     width: 34px;
+     height: 1px;
+     display: block;
+ }
+  .container .products .product  span{
+      margin: 0 10px;  
+  }
+  .container .products .product .line .discount{
+      text-decoration: line-through;
+      color: #777;
+  }
+    .container .products .product .line {
+        color: var(--blue);
+    }
+    .container .products .product[aria-details="icon"]{
+      position: relative;
+        font-size: 30px;
+        
+    }
+    .container .products .product[aria-details="Icon"]::before{
+        content: "Sale";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: -20px;
+        left: -20px;
+        background-color: #f00;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.7;
+      
+    }

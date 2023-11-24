@@ -1,0 +1,100 @@
+
+/* Start Variables */
+:root{
+    --text-color:rgb(161, 161, 161);
+    --main-raduis : 5px;
+}
+/* End Variables */
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height: 2;
+    color: var(--text-color);
+    font-size:14px ;
+}
+.head{
+    text-align: center;
+}
+h2 , 
+h3 ,
+h4{
+    color: #242d3c;
+}
+.head h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.head p{
+    margin: auto;
+    width: 550px;
+}
+.boxes {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: repeat(2 , 1fr);
+    /* margin: 100px; */
+}
+.boxes .image-circle{
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    background-image: url(../img/landing.jpg);
+    padding: 100px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+.boxes .image-circle::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36 45 60 /60%);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.boxes .image-circle h3{
+    position: relative;
+    color: white;
+    text-transform: capitalize;
+    z-index: 2;
+
+}
+.boxes .image-circle p{
+    position: relative;
+
+    z-index: 2;
+
+}
+.boxes .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    padding: 0 70px;
+}
+.left{
+    flex-direction: row-reverse;
+    text-align: right;
+    margin-right: -150px;
+}
+.right{
+    margin-left: -150px;
+    
+}
+.image img{
+    width: 100px;
+    border-radius: 50%;
+    border: 8px solid white;
+}

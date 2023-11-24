@@ -1,0 +1,119 @@
+/* Start Variables */
+:root{
+    --main-color:#2196f3;
+    --second-color:#999;
+}
+/* END Variables */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+/* END Global Rules */
+.email-box{
+    width: 400px;
+    margin: 25px auto;
+    background-color:var(--main-color) ;
+    border: 1px solid #aaa;
+}
+.box{
+    width: 330px;
+    background-color:#fff ;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 5px;
+}
+.info h2{
+    text-align: center;
+    font-weight: normal;
+}
+form div{
+    position: relative;
+    color: var(--second-color);
+    margin-top: 10px;
+}
+
+form input{
+    border: none;
+    outline: none;
+    padding: 15px 5px ;
+    width: 90%;
+}
+form div::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e7e7e7;
+    left: 0;
+    bottom: 0;
+}
+form button{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info p{
+    font-size: 12px;
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 30px;
+}
+.info p span{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.social h4{
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.con-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-social div{
+    width: 40px;
+    text-align: center;
+    color: white;
+}
+.fab.fa-facebook-f,
+.fab.fa-twitter,
+.fab.fa-google-plus-g{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+   line-height: 2.5;
+   font-size: 12px;
+   font-weight: bold;
+}
+.fab.fa-facebook-f{
+    background-color:#3b5998 ;
+}
+.fab.fa-twitter{
+    background-color:#2196f3 ;
+}
+.fab.fa-google-plus-g{
+    background-color:#db4437 ;
+}
